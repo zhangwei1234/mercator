@@ -2,6 +2,7 @@ package com.topic.mercator.domain;
 
 import java.io.Serializable;
 
+
 /**
  * geo graph
  * Copyright (c) 2015 www.imdada.cn All rights reserved.
@@ -9,7 +10,7 @@ import java.io.Serializable;
  * @author cdzhangwei
  * @since 2016年11月28日
  */
-public class GeoGraph implements Serializable{
+public abstract class GeoGraph implements Serializable{
 
 	/**
 	 * 
@@ -32,4 +33,9 @@ public class GeoGraph implements Serializable{
 		this.targCoordinate = targCoordinate;
 	}
 	
+	/**
+	 * 得到图像的最小矩形
+	 * @return
+	 */
+	public abstract Rectangular getRectangular();
 }
